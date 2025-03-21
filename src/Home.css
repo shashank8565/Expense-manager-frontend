@@ -1,0 +1,113 @@
+#Charts {
+  display: grid;
+  gap: 1%;
+  margin: 20px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+#pie-chart {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  background: #fff;
+}
+
+/* Firefox Fallback (Blur using Pseudo-Element) */
+
+#line-chart {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  background: #fff;
+}
+
+#Input-Text {
+  /* height: 320px;
+  width: 350px; */
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  justify-content: space-between;
+
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#Input-Text input {
+  padding: 12px;
+  border: 2px solid #d1d9e6;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+  background: white;
+}
+
+#Input-Text input:focus {
+  border-color: #007bff;
+  box-shadow: 0px 0px 8px rgba(0, 123, 255, 0.4);
+}
+
+#categories-container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.radio-label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  gap: 10px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 2px solid #ccc;
+  transition: all 0.3s ease-in-out;
+}
+
+.radio-label:hover {
+  border-color: #007bff;
+  background-color: #f0f8ff;
+}
+
+.radio-label input {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #007bff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.radio-label input:checked {
+  background-color: #007bff;
+  border: 6px solid white;
+  box-shadow: 0 0 0 2px #007bff;
+}
+
+.simple-button {
+  width: 35%;
+  background-color: #007bff; /* Blue color */
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 10px 20px;
+
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.simple-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.simple-button:active {
+  transform: scale(0.98);
+}
